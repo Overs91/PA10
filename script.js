@@ -1,3 +1,5 @@
+// Contacts array
+
 let contacts = [
   { name: "Maxwell Wright", phone: "019171916495", email: "contact1@cctb.com" },
   { name: "Raja Villarreal", phone: "0863982895", email: "contact2@cctb.com" },
@@ -15,6 +17,7 @@ function displayContacts() {
   });
 }
 
+//Add new contact
 function addContact() {
   let name = prompt("Enter contact name:");
   let phone = prompt("Enter contact phone:");
@@ -25,6 +28,7 @@ function addContact() {
   }
 }
 
+// Find contact
 function findContact(name, index = 0) {
   if (index >= contacts.length) return null;
   if (contacts[index].name.toLowerCase() === name.toLowerCase())
@@ -64,6 +68,8 @@ document
 setInterval(() => {
   console.log(`Current number of contacts: ${contacts.length}`);
 }, 5000);
+
+// Dynamic Background Color
 
 function changeBackgroundColor() {
   const colors = ["#FFCCCC", "#CCFFCC", "#CCCCFF", "#FFFFCC", "#FFCCFF"];
